@@ -18,6 +18,9 @@ function animrow() {
   <meta name="msapplication-navbutton-color" content="#ecefe4">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ecefe4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="https://www.colorhexa.com/242424.png">
+  <link rel="shortcut icon" href="https://www.colorhexa.com/242424.png" type="image/x-icon">
   <title></title>
 </head>
 
