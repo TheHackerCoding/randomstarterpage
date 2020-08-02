@@ -1,0 +1,189 @@
+/*----------------------------------------------------------------*/
+
+
+/* Originally made and created by TheHackerCoding */
+
+
+/* Compiled in Koala */
+
+
+/*----------------------------------------------------------------*/
+
+$dark: #242424;
+$dark-middle: #635B53;
+$middle: #7B766A;
+$middle-light: #9D9CBA;
+$light: #ECEFE4;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: Helvetica, Arial, "sans-serif";
+}
+
+#bannersection {
+    position: relative;
+    display: table;
+    width: 100%;
+    background-color: $dark;
+    height: 50vh;
+}
+
+.bannercontent {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0 3%;
+    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, 2px 2px 2px rgba(36, 36, 36, 0);
+    color: $light;
+    p {
+        padding: 1em;
+    }
+}
+
+.content {
+    background-color: $light;
+    color: $dark;
+}
+
+.invertContent {
+    background-color: $dark;
+    color: $light;
+}
+
+.content,
+.invertContent {
+    $contentPaddingLeftRight: 1em;
+    $contentPaddingTopBottom: 1em;
+    padding-left: $contentPaddingLeftRight;
+    padding-right: $contentPaddingLeftRight;
+    padding-top: $contentPaddingTopBottom;
+    padding-bottom: $contentPaddingTopBottom;
+    font-size: 18px;
+}
+
+.container {
+    margin-top: 2em;
+    display: table;
+    width: 100%;
+    .leftHalf {
+        position: absolute;
+        padding-left: 1em;
+        left: 0px;
+        width: 50%;
+    }
+    .rightHalf {
+        position: absolute;
+        padding-right: 1em;
+        right: 0px;
+        width: 50%;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin: auto;
+    /*h2 {
+        margin-top: 1.5em;
+    }*/
+}
+
+.formgroup {
+    vertical-align: middle;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    label {
+        margin-bottom: 1em;
+        margin-top: 1em;
+        display: block;
+    }
+    input {
+        box-sizing: border-box;
+    }
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        background-color: $light;
+        border: 2px solid $middle-light;
+        border-radius: 8px;
+    }
+    input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        background-color: $light;
+        border: 2px solid $middle-light;
+        border-radius: 8px;
+    }
+    input[type=submit] {
+        background-color: $light;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 2px solid $middle-light;
+        border-radius: 8px;
+    }
+    textarea {
+        width: 50%;
+        height: 150px;
+        padding: 12px 20px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: $light;
+        font-size: 16px;
+        resize: none;
+    }
+}
+
+.animrow {
+    background: linear-gradient(to right, $dark, $dark-middle, $middle, $middle-light, $light);
+    background-size: 400% 400%;
+    user-select: none;
+    pointer-events: none;
+    height: 2em;
+    animation: animrow 3s infinite ease-in-out;
+}
+
+@media screen and (min-width: 800px) {
+    .column {
+        flex: 1;
+    }
+}
+
+@keyframes animrow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

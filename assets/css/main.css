@@ -1,0 +1,200 @@
+/*----------------------------------------------------------------*/
+/* Originally made and created by TheHackerCoding */
+/* Compiled in Koala */
+/*----------------------------------------------------------------*/
+/* line 17, ../scss/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* line 24, ../scss/main.scss */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* line 30, ../scss/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 34, ../scss/main.scss */
+body {
+  font-size: 16px;
+  font-family: Helvetica, Arial, "sans-serif";
+}
+
+/* line 39, ../scss/main.scss */
+#bannersection {
+  position: relative;
+  display: table;
+  width: 100%;
+  background-color: #242424;
+  height: 50vh;
+}
+
+/* line 47, ../scss/main.scss */
+.bannercontent {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0 3%;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, 2px 2px 2px rgba(36, 36, 36, 0);
+  color: #ECEFE4;
+}
+/* line 56, ../scss/main.scss */
+.bannercontent p {
+  padding: 1em;
+}
+
+/* line 61, ../scss/main.scss */
+.content {
+  background-color: #ECEFE4;
+  color: #242424;
+}
+
+/* line 66, ../scss/main.scss */
+.invertContent {
+  background-color: #242424;
+  color: #ECEFE4;
+}
+
+/* line 71, ../scss/main.scss */
+.content,
+.invertContent {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 18px;
+}
+
+/* line 82, ../scss/main.scss */
+.container {
+  margin-top: 2em;
+  display: table;
+  width: 100%;
+}
+/* line 86, ../scss/main.scss */
+.container .leftHalf {
+  position: absolute;
+  padding-left: 1em;
+  left: 0px;
+  width: 50%;
+}
+/* line 92, ../scss/main.scss */
+.container .rightHalf {
+  position: absolute;
+  padding-right: 1em;
+  right: 0px;
+  width: 50%;
+}
+
+/* line 100, ../scss/main.scss */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* line 107, ../scss/main.scss */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin: auto;
+  /*h2 {
+      margin-top: 1.5em;
+  }*/
+}
+
+/* line 117, ../scss/main.scss */
+.formgroup {
+  vertical-align: middle;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+/* line 121, ../scss/main.scss */
+.formgroup label {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  display: block;
+}
+/* line 126, ../scss/main.scss */
+.formgroup input {
+  box-sizing: border-box;
+}
+/* line 129, ../scss/main.scss */
+.formgroup input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #ECEFE4;
+  border: 2px solid #9D9CBA;
+  border-radius: 8px;
+}
+/* line 137, ../scss/main.scss */
+.formgroup input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #ECEFE4;
+  border: 2px solid #9D9CBA;
+  border-radius: 8px;
+}
+/* line 145, ../scss/main.scss */
+.formgroup input[type=submit] {
+  background-color: #ECEFE4;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #9D9CBA;
+  border-radius: 8px;
+}
+/* line 152, ../scss/main.scss */
+.formgroup textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #ECEFE4;
+  font-size: 16px;
+  resize: none;
+}
+
+/* line 164, ../scss/main.scss */
+.animrow {
+  background: linear-gradient(to right, #242424, #635B53, #7B766A, #9D9CBA, #ECEFE4);
+  background-size: 400% 400%;
+  user-select: none;
+  pointer-events: none;
+  height: 2em;
+  animation: animrow 3s infinite ease-in-out;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 174, ../scss/main.scss */
+  .column {
+    flex: 1;
+  }
+}
+@keyframes animrow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
